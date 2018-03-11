@@ -6,9 +6,25 @@
   </head>
   <body>
       <header class="main-header">
-          <a class="main-header-logo logo">DEVICE</a>
-          <span class="search-form">Поиск по сайту</span>
-          <span class="catalog">Каталог товаров</span>
+          <a class="main-header-logo logo" alt="логотип магазина «Девайс»" >Device</a>
+          <form action="#" method="get">
+              <label for="site-search-id">
+              Поиск по сайту
+              </label>
+              <img src="img/menu/search.svg">
+              <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту">
+          </form>
+          <section class="catalog">
+            <button class="open-catalog">Каталог товаров</button>
+            <ul>
+                <li>Виртуальная реальность</li>
+                <li>Моноподы для селфи</li>
+                <li>Экшн-Камеры</li>
+                <li>Фитнес браслеты</li>
+                <li>Умные часы</li>
+                <li>Квадрокоптеры</li>
+            </ul>
+          </section>
           <nav class="main-navigation">
             <ul class="user-navigation">
                 <li class="login-link">Войти</li>
@@ -23,7 +39,9 @@
           </nav>
       </header>
       <main>
+
           <section class="promo-slider">
+              <h2 class="visually-hidden">Промо слайдер</h2>
               <div class="slide1">
                   <img src="img/promo_slider/slider-1.png" alt="палка для селфи">
                   <p class="lead">Делай селфи, как Бен Стиллер!</p>
@@ -89,6 +107,7 @@
               </div>
           </section>
           <section class="popular">
+              <h2 class="visually-hidden">Популярные категории</h2>
               <div class="virtual-reality">
                   <img src="img/popular/popular-1.svg" alt="виртуальная реальность">
                   <h3>Виртуальная реальность</h3>
@@ -115,6 +134,7 @@
               </div> 
           </section>
           <section class="servises">
+              <h2 class="visually-hidden">Сервисы</h2>
               <nav class="services-navigation">
                   <ul>
                     <li>Доставка</li>
@@ -139,10 +159,11 @@
               </div>
           </section>
           <section class="logotypes">
-              <img src="img/logotypes_opasity/logo-1.png" alt="здесь должен быть логотип">
-              <img src="img/logotypes_opasity/logo-2.png" alt="здесь должен быть логотип">
-              <img src="img/logotypes_opasity/logo-3.png" alt="здесь должен быть логотип">
-              <img src="img/logotypes_opasity/logo-4.png" alt="здесь должен быть логотип">
+              <h2 class="visually-hidden">Бренды</h2>
+              <img src="img/logotypes_opasity/logo-1.png" alt="Бренд DJI">
+              <img src="img/logotypes_opasity/logo-2.png" alt="Бренд SP Gadgets">
+              <img src="img/logotypes_opasity/logo-3.png" alt="Бренд GoPro">
+              <img src="img/logotypes_opasity/logo-4.png" alt="Бренд Vivo">
           </section>
           <div class="about-us-contacts">
               <section class="about-us">
@@ -159,8 +180,8 @@
               <section class="contacts">
                   <h3>Контакты</h3>
                   <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                  <span class="map"><img src="img/map.png" alt="здесь должна быть карта"></span>
-                  <a>Напишите нам</a>
+                  <button class="map"><img src="img/map.png" alt="г. Москва, ул Строителей, 15"></button>
+                  <button>Напишите нам</button>
               </section>
           </div>
       </main>
