@@ -17,19 +17,19 @@
           <section class="catalog">
             <button class="open-catalog">Каталог товаров</button>
             <ul>
-                <li>Виртуальная реальность</li>
-                <li>Моноподы для селфи</li>
-                <li>Экшн-Камеры</li>
-                <li>Фитнес браслеты</li>
-                <li>Умные часы</li>
-                <li>Квадрокоптеры</li>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-Камеры</a></li>
+                <li><a href="#">Фитнес браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </section>
           <nav class="main-navigation">
             <ul class="user-navigation">
-                <li class="login-link">Войти</li>
-                <li class="compare">Сравнить</li>
-                <li class="cart">Корзина</li>
+                <li class="login-link"><a href="#">Войти</a></li>
+                <li class="compare"><a href="#">Сравнить</a></li>
+                <li class="cart"><a href="#">Корзина</a></li>
             </ul>
             <ul class="site-navigation">
                 <li><a href="#delivery">Доставка</a></li>
@@ -48,9 +48,9 @@
                   <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <a>Подробнее</a>
                   <label>
-                      <input type="radio" name="slider" value=first>
-                      <input type="radio" name="slider" value=second>
-                      <input type="radio" name="slider" value=third>
+                      <input type="radio" name="slider" value="first">
+                      <input type="radio" name="slider" value="second">
+                      <input type="radio" name="slider" value="third">
                   </label>
                   <table class="promo-slider-table">
                       <tr>
@@ -108,30 +108,42 @@
           </section>
           <section class="popular">
               <h2 class="visually-hidden">Популярные категории</h2>
-              <div class="virtual-reality">
-                  <img src="img/popular/popular-1.svg" alt="виртуальная реальность">
+              <a href="#">
+                  <div class="virtual-reality">
+                      <img src="img/popular/popular-1.svg" alt="виртуальная реальность">
+                  </div>
                   <h3>Виртуальная реальность</h3>
-              </div>
-              <div class="monopods-for-selfie">
-                  <img src="img/popular/popular-2.svg" alt="моноподы для селфи">
+              </a>
+              <a href="#">
+                  <div class="monopods-for-selfie">
+                      <img src="img/popular/popular-2.svg" alt="моноподы для селфи">
+                  </div>
                   <h3>Моноподы для селфи</h3>
-              </div>
-              <div class="action-cameras">
-                  <img src="img/popular/popular-3.svg" alt="экшн-камеры">
+              </a>
+              <a href="#">
+                  <div class="action-cameras">
+                      <img src="img/popular/popular-3.svg" alt="экшн-камеры">
+                  </div>
                   <h3>Экшн-камеры</h3>
-              </div>
-              <div class="fitness-bracelets">
-                  <img src="img/popular/popular-4.svg" alt="фитнес-браслеты">
+              </a>
+              <a href="#">
+                  <div class="fitness-bracelets">
+                      <img src="img/popular/popular-4.svg" alt="фитнес-браслеты">
+                  </div>
                   <h3>Фитнес-браслеты</h3>
-              </div>
-              <div class="Smart-watch">
-                  <img src="img/popular/popular-5.svg" alt="умные часы">
+              </a>
+              <a href="#">
+                  <div class="Smart-watch">
+                      <img src="img/popular/popular-5.svg" alt="умные часы">
+                  </div>
                   <h3>Умные часы</h3>
-              </div>
-              <div class="Quadrupters">
-                  <img src="img/popular/poppular-6.svg" alt="квадрокоптеры">
-                  <h3>Квадрокоптеры</h3>
-              </div> 
+              </a>
+              <a href="#">
+                  <div class="Quadrupters">
+                      <img src="img/popular/poppular-6.svg" alt="квадрокоптеры">
+                      <h3>Квадрокоптеры</h3>
+                  </div>
+              </a>
           </section>
           <section class="servises">
               <h2 class="visually-hidden">Сервисы</h2>
@@ -182,6 +194,15 @@
                   <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                   <button class="map"><img src="img/map.png" alt="г. Москва, ул Строителей, 15"></button>
                   <button>Напишите нам</button>
+                  <form action="" method="post">
+                        <label for="user-name-id">Ваше имя:</label>
+                        <input type="text" name="user-name" id="user-name-id" placeholder="Имя Фамилия">
+                        <label for="user-e-mail-id">Ваш e-mail:</label>
+                        <input type="text" name="user-e-mail" id="user-e-mail-id" placeholder="email@example.com">
+                        <label for="text-letter-id">Текст письма:</label>
+                        <textarea name="letter" id="text-letter-id" cols="12" rows="5">В свободной форме</textarea>
+                        <input type="submit" name="send" id="send-letter" value="Отправить">
+                  </form>
               </section>
           </div>
       </main>
@@ -197,20 +218,22 @@
                   <li><a href="#contacts">Контакты</a></li>
               </ul>
               <ul>
-                  <li><a>fb</a></li>
-                  <li><a>insta</a></li>
-                  <li><a>twitter</a></li>
+                  <li class="social" id="facebook">
+                      <a href=""><img src="img/social/fb.svg">fb</a>
+                  </li>
+                  <li class="social" id="instagram"><a href=""><img src="img/social/insta.svg">insta</a></li>
+                  <li class="social" id="twitter"><a href=""><img src="img/social/twitter.svg">twitter</a></li>
               </ul>
           </section>
           <section class="user-navigation">
-              <ul class="user-navigation">
-                    <li class="login-link">Войти</li>
-                    <li class="compare">Сравнить</li>
-                    <li class="cart">Корзина</li>
+              <ul>
+                  <li class="login-link"><a href="">Войти</a></li>
+                  <li class="compare"><a href="">Сравнить</a></li>
+                  <li class="cart"><a href="">Корзина</a></li>
               </ul>
               <p>тел.+7(495)495-95-95</p>
               <a href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img src="img/logo-html.svg">.
+                  <img src="img/logo-html.svg">.
               </a>
           </section>
          
