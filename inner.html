@@ -12,7 +12,7 @@
         <form action="#" method="get">
             <label class="visually-hidden" for="site-search-id">
               Поиск по сайту
-              </label>
+            </label>
             <img src="img/menu/search.svg" alt="search">
             <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту">
         </form>
@@ -55,26 +55,34 @@
             <legend>Фильтр</legend>
             <ul>
                 <li class="item-price">
-                    <label for="price-range">Стоимость</label> от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
+                    <label for="price-range">Стоимость</label>
+                    от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
                 </li>
                 <li class="color">
-                    <label>Цвет</label>
-                    <input type="checkbox" name="black">Черный
-                    <input type="checkbox" name="white">Белый
-                    <input type="checkbox" name="indigo">Синий
-                    <input type="checkbox" name="red">Красный
-                    <input type="checkbox" name="pink">Розовый
+                    <h3>Цвет</h3>
+                    <label for="black">Черный</label>
+                    <input id="black" type="checkbox" name="black">
+                    <label for="white">Белый</label>
+                    <input id="white" type="checkbox" name="white">
+                    <label for="indigo">Синий</label>
+                    <input id="indigo" type="checkbox" name="indigo">
+                    <label for="red">Красный</label>
+                    <input id="red" type="checkbox" name="red">
+                    <label for="pink">Розовый</label>
+                    <input id="pink" type="checkbox" name="pink">
                 </li>
                 <li class="bluetooth">
-                    <label>Bluetooth</label>
-                    <input type="radio" name="yes" checked>Есть
-                    <input type="radio" name="no">Нет
+                    <h3>Bluetooth</h3>
+                    <label for="yes">Есть</label>
+                    <input id="yes" type="radio" name="yes" checked>
+                    <label for="no">Нет</label>
+                    <input id="no" type="radio" name="no">
                 </li>
             </ul>
             <input type="submit" value="показать" id="show-results">
         </fieldset>
         <section class="sort">
-            <h2 class="visually-hidden">Сортировка</h2>
+            <h2 >Сортировка</h2>
             <ul>
                 <li class="sort-price"><a href="#">По цене</a></li>
                 <li class="sort-type"><a href="#">По типу</a></li>
@@ -135,7 +143,9 @@
     <footer class="page-footer">
         <section class="info">
             <h2 class="visually-hidden">Информация о компании</h2>
-            <a class="footer-logo logo">DEVICE</a>
+            <a href="#" class="footer-logo logo">Device
+
+            </a>
             <p>г. Москва, ул Строителей, 15</p>
         </section>
         <section class="footer-services">
