@@ -8,7 +8,7 @@
 
 <body>
     <header class="main-header">
-        <a href="#" class="main-header-logo logo" href="">Device</a>
+        <a class="main-header-logo logo">Device</a>
         <form action="#" method="get">
             <label class="visually-hidden" for="site-search-id">
               Поиск по сайту
@@ -17,13 +17,12 @@
             <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту">
         </form>
         <section class="catalog">
-            <h2 class="visually-hiden">Каталог</h2>
-            <button class="open-catalog">
+            <h2 class="open-catalog">
                 Каталог товаров<img src="img/menu/plus.png" alt="Раскрыть каталог">
-            </button>
+            </h2>
             <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a>Моноподы для селфи</a></li>
+                <li><a href="inner.html">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-Камеры</a></li>
                 <li><a href="#">Фитнес браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
@@ -49,14 +48,13 @@
         <ul class="breadcrumbs">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Каталог товаров</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a>Моноподы для селфи</a></li>
         </ul>
         <fieldset class="filter">
             <legend>Фильтр</legend>
             <ul>
                 <li class="item-price">
-                    <label for="price-range">Стоимость</label>
-                    от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
+                    <label for="price-range">Стоимость</label> от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
                 </li>
                 <li class="color">
                     <h3>Цвет</h3>
@@ -97,7 +95,7 @@
                 <li class="item-wrapper">
                     <img src="img/items/item-1.jpg" alt="Любительская селфи-палка">
                     <h3 class="item-title">
-                    <a href="#">Любительская селфи-палка</a>
+                        <a href="#">Любительская селфи-палка</a>
                     </h3>
                     <span class="price">500 руб.</span>
                 </li>
@@ -136,7 +134,6 @@
         <section class="info">
             <h2 class="visually-hidden">Информация о компании</h2>
             <a href="#" class="footer-logo logo">Device
-
             </a>
             <p>г. Москва, ул Строителей, 15</p>
         </section>
@@ -152,18 +149,22 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul>
                 <li id="facebook">
-                    <a href=""><img src="img/social/fb.svg" alt="Фейсбук">fb</a>
+                    <a href="#"><img src="img/social/fb.svg" alt="Фейсбук">fb</a>
                 </li>
-                <li id="instagram"><a href=""><img src="img/social/insta.svg" alt="Инстаграм">insta</a></li>
-                <li id="twitter"><a href=""><img src="img/social/twitter.svg" alt="Твиттер">twitter</a></li>
+                <li id="instagram">
+                    <a href="#"><img src="img/social/insta.svg" alt="Инстаграм">insta</a>
+                </li>
+                <li id="twitter">
+                    <a href="#"><img src="img/social/twitter.svg" alt="Твиттер">twitter</a>
+                </li>
             </ul>
         </section>
         <section class="footer-user-navigation">
             <h2 class="visually-hidden">Меню пользователя</h2>
             <ul>
-                <li class="login-link"><a href="">Войти</a></li>
-                <li class="compare"><a href="">Сравнить</a></li>
-                <li class="cart"><a href="">Корзина</a></li>
+                <li class="login-link"><a href="#">Войти</a></li>
+                <li class="compare"><a href="#">Сравнить</a></li>
+                <li class="cart"><a href="#">Корзина</a></li>
             </ul>
             <p>тел.+7(495)495-95-95</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HtmlAcademy"></a>
