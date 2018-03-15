@@ -49,25 +49,26 @@ main-header {
     text-transform: uppercase;
     font-weight: bold;
 }
-h1{
-    font-family:"Gilroy";
+
+h1 {
+    font-family: "Gilroy";
     font-size: 47px;
     color: black;
 }
 
-h2{
-    font-family:"Gilroy";
+h2 {
+    font-family: "Gilroy";
     font-size: 18px;
 }
 
-h3{
-    font-family:"Gilroy";
+h3 {
+    font-family: "Gilroy";
     font-size: 18px;
-    color:#000000;
+    color: #000000;
 }
 
-p{
-    font-family:"Open Sans";
+p {
+    font-family: "Open Sans";
 }
 
 .catalog,
@@ -84,20 +85,23 @@ p{
 }
 
 ul.user-navigation,
-ul.site-navigation{
-    width:500px;
+ul.site-navigation {
+    width: 500px;
 }
+
 .user-navigation li,
 .site-navigation li {
     display: inline-block;
 }
+
 .interactive-header:hover,
-.interactive-header:focus{
-    opacity:0.6;
-    outline:none;
+.interactive-header:focus {
+    opacity: 0.6;
+    outline: none;
 }
-.interactive-header:active{
-    opacity:0.3;
+
+.interactive-header:active {
+    opacity: 0.3;
 }
 
 /*Популярные категории*/
@@ -109,25 +113,26 @@ ul.site-navigation{
     color: #000000;
 }
 
-.button{
-    width:220px;
-    height:40px;
+.button {
+    width: 220px;
+    height: 40px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.2em;
-    background:#f0c52e;
+    background: #f0c52e;
 }
 
 .popular a {
-    width:160px;
-    height:240px;
+    width: 160px;
+    height: 240px;
     margin-right: 40px;
     text-align: left;
 }
+
 .popular div {
-    display:block;
-    width:160px;
-    height:160px;
+    display: block;
+    width: 160px;
+    height: 160px;
     background: #f7e296;
 }
 
@@ -146,10 +151,13 @@ ul.site-navigation{
     font-weight: bold;
 }
 
+/*logotypes*/
+
 .logotypes {
     padding: 94px 120px;
 }
-.logotypes ul{
+
+.logotypes ul {
     padding: 0;
 }
 
@@ -166,59 +174,74 @@ ul.site-navigation{
     display: inline-block;
 
 }
+
 /*Footer*/
+
 .page-footer {
     color: #ffffff;
     background-color: #464646;
 }
 
-.footer-logo{
-    color:#ffc600;
+.footer-logo {
+    color: #ffc600;
 }
+
 .page-footer section {
     display: inline-block;
 }
 
-.page-footer section li{
+.page-footer section li {
     display: inline-block;
     list-style: none;
 
 }
-.page-footer section a:not(.logo){
+
+.page-footer section a:not(.logo) {
     color: #ffffff;
 }
 
-.footer-social-img{
-    opacity:0.3;
+.footer-social-img {
+    opacity: 0.3;
 }
-.footer-user-img{
-    background-color:#ffc600;
-}
+
+
 /*inner page*/
 
-.breadcrumbs li{
+.breadcrumbs li {
     list-style: none;
-    display:inline-block;
+    display: inline-block;
 }
-.breadcrumbs li a{
-    color: rgba(0,0,0,0.3);
+
+.breadcrumbs li a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.interactive-breadcrumbs:hover,
+.interactive-breadcrumbs:focus {
+    color: rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+.interactive-breadcrumbs:active {
+    opacity: 0.1;
 }
 
 .filter li,
 .sort li,
-.items li{
+.items li {
     list-style: none;
 }
-.inner-page{
-    font-family:"Gilroy";
+
+.inner-page {
+    font-family: "Gilroy";
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 
-.filter{
-    width:470px;
+.filter {
+    width: 470px;
     font-family: "Open-sans";
     font-size: 14px;
     font-weight: lighter
@@ -226,17 +249,20 @@ ul.site-navigation{
 
 .sort li a,
 .items li a,
-.paginator a{
-    text-decoration:none;
-    color:#000000;
+.paginator a {
+    text-decoration: none;
+    color: #000000;
 }
-.sort{
-    display:flex;
+
+.sort {
+    display: flex;
 }
-.sort li{
-    display:inline-block;
+
+.sort li {
+    display: inline-block;
 }
-.paginator a{
+
+.paginator a {
     font-family: "Gilroy";
     font-weight: bold;
     text-transform: uppercase;
