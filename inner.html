@@ -65,15 +65,14 @@
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
             <li><a href="#">Главная ></a></li>
-            <li><a href="#">Каталог товаров ></a></li>
+            <li><a class="interactive-breadcrumbs" href="#">Каталог товаров ></a></li>
             <li><a>Моноподы для селфи</a></li>
         </ul>
         <fieldset class="filter">
             <legend class="inner-page">Фильтр:</legend>
             <ul>
                 <li class="item-price">
-                    <label for="price-range"><h3>Стоимость</h3></label>
-                    от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
+                    <label for="price-range"><h3>Стоимость</h3></label> от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
                 </li>
                 <li class="color">
                     <h3>Цвет</h3>
@@ -152,16 +151,16 @@
     <footer class="page-footer">
         <section class="info">
             <h2 class="visually-hidden">Информация о компании</h2>
-            <a href="#" class="footer-logo logo">Device
+            <a href="#" class="footer-logo logo interactive-header">Device
             </a>
             <p>г. Москва, ул Строителей, 15</p>
         </section>
         <section class="footer-services">
             <h2 class="visually-hidden">Сервисы</h2>
             <ul>
-                <li><a href="#delivery">Доставка</a></li>
-                <li><a href="#warranty">Гарантия</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a class="interactive-header" href="#delivery">Доставка</a></li>
+                <li><a class="interactive-header" href="#warranty">Гарантия</a></li>
+                <li><a class="interactive-header" href="#contacts">Контакты</a></li>
             </ul>
         </section>
         <section class="footer-social">
@@ -181,9 +180,26 @@
         <section class="footer-user-navigation">
             <h2 class="visually-hidden">Меню пользователя</h2>
             <ul>
-                <li class="login-link"><a href="#">Войти</a></li>
-                <li class="compare"><a href="#">Сравнить</a></li>
-                <li class="cart"><a href="#">Корзина</a></li>
+                <li class="login-link">
+                    <a class="interactive-header" href="#">
+                        <img src="img/menu/user.svg" alt="Пользователь">Валентин Петухов
+                    </a>
+                </li>
+                <li class="login-link">
+                    <a class="interactive-header" href="#">
+                        Выйти
+                    </a>
+                </li>
+                <li class="compare">
+                    <a class="interactive-header" href="#">
+                        <img src="img/menu/compare.svg" alt="Сравнить">Сравнить
+                    </a>
+                </li>
+                <li class="cart">
+                    <a class="interactive-header" href="#">
+                        <img src="img/menu/cart.svg" alt="Корзина">Корзина
+                    </a>
+                </li>
             </ul>
             <p>тел.+7(495)495-95-95</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HtmlAcademy"></a>
