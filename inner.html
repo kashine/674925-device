@@ -4,68 +4,87 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <a class="main-header-logo logo">Device</a>
-        <form action="#" method="get">
-            <label class="visually-hidden" for="site-search-id">
+        <div class="yellow">
+            <form action="#" method="get">
+                <label class="visually-hidden" for="site-search-id">
               Поиск по сайту
             </label>
-            <img src="img/menu/search.svg" alt="Поиск">
-            <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту">
-        </form>
-        <section class="catalog">
-            <h2 class="open-catalog">
-                Каталог товаров<img src="img/menu/plus.png" alt="Раскрыть каталог">
-            </h2>
-            <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="inner.html">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-Камеры</a></li>
-                <li><a href="#">Фитнес браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-        </section>
-        <nav class="main-navigation">
-            <ul class="user-navigation">
-                <li class="user-name"><a href="#">Валентин Петухов</a></li>
-                <li class="logout"><a href="#">Выйти</a></li>
-                <li class="compare"><a href="#">Сравнить</a></li>
-                <li class="cart"><a href="#">Корзина</a></li>
-            </ul>
-            <ul class="site-navigation">
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="guarantee.html">Гарантия</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+                <img src="img/menu/search.svg" alt="Поиск">
+                <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту">
+            </form>
+            <section class="catalog">
+                <h2 class="open-catalog interactive-header">
+                    Каталог товаров<img src="img/menu/plus.png" alt="Раскрыть каталог">
+                </h2>
+                <ul class="catalog-options">
+                    <li class="interactive-header"><a href="#">Виртуальная реальность</a></li>
+                    <li class="interactive-header"><a href="inner.html">Моноподы для селфи</a></li>
+                    <li class="interactive-header"><a href="#">Экшн-Камеры</a></li>
+                    <li class="interactive-header"><a href="#">Фитнес браслеты</a></li>
+                    <li class="interactive-header"><a href="#">Умные часы</a></li>
+                    <li class="interactive-header"><a href="#">Квадрокоптеры</a></li>
+                </ul>
+            </section>
+            <nav class="main-navigation">
+                <ul class="user-navigation">
+                    <li class="user-name">
+                        <a class="interactive-header" href="#">
+                        <img src="img/menu/user.svg" alt="Войти">Валентин Петухов
+                    </a>
+                    </li>
+                    <li class="logout">
+                        <a class="interactive-header" href="#">Выйти</a>
+                    </li>
+                    <li class="compare">
+                        <a class="interactive-header" href="#">
+                        <img src="img/menu/compare.svg" alt="Сравнить">Сравнить
+                    </a>
+                    </li>
+                    <li class="cart">
+                        <a class="interactive-header" href="#">
+                        <img src="img/menu/cart.svg" alt="Корзина">Корзина
+                    </a>
+                    </li>
+                </ul>
+                <ul class="site-navigation">
+                    <li><a class="interactive-header" href="delivery.html">Доставка</a></li>
+                    <li><a class="interactive-header" href="guarantee.html">Гарантия</a></li>
+                    <li><a class="interactive-header" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог товаров</a></li>
+            <li><a href="#">Главная ></a></li>
+            <li><a href="#">Каталог товаров ></a></li>
             <li><a>Моноподы для селфи</a></li>
         </ul>
         <fieldset class="filter">
-            <legend>Фильтр</legend>
+            <legend class="inner-page">Фильтр:</legend>
             <ul>
                 <li class="item-price">
-                    <label for="price-range">Стоимость</label> от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
+                    <label for="price-range"><h3>Стоимость</h3></label>
+                    от 0<input type="range" min="0" max="10000" step="100" id="price-range">до 5000
                 </li>
                 <li class="color">
                     <h3>Цвет</h3>
                     <label for="black">Черный</label>
-                    <input id="black" type="checkbox" name="black">
+                    <input id="black" type="checkbox" name="black"><br>
                     <label for="white">Белый</label>
-                    <input id="white" type="checkbox" name="white">
+                    <input id="white" type="checkbox" name="white"><br>
                     <label for="indigo">Синий</label>
-                    <input id="indigo" type="checkbox" name="indigo">
+                    <input id="indigo" type="checkbox" name="indigo"><br>
                     <label for="red">Красный</label>
-                    <input id="red" type="checkbox" name="red">
+                    <input id="red" type="checkbox" name="red"><br>
                     <label for="pink">Розовый</label>
                     <input id="pink" type="checkbox" name="pink">
                 </li>
@@ -80,7 +99,7 @@
             <input type="submit" value="показать" id="show-results">
         </fieldset>
         <section class="sort">
-            <h2>Сортировка</h2>
+            <h2 class="inner-page">Сортировка:</h2>
             <ul>
                 <li class="sort-price"><a href="#">По цене</a></li>
                 <li class="sort-type"><a href="#">По типу</a></li>
@@ -123,11 +142,11 @@
             </ul>
         </section>
         <div class="paginator">
-            <a href="#prev">Назад</a>
-            <a href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#next">Вперёд</a>
+            <a class="interactive-header" href="#prev">Назад</a>
+            <a class="interactive-header" href="#1">1</a>
+            <a class="interactive-header" href="#2">2</a>
+            <a class="interactive-header" href="#3">3</a>
+            <a class="interactive-header" href="#next">Вперёд</a>
         </div>
     </main>
     <footer class="page-footer">
