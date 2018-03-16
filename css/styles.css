@@ -104,15 +104,6 @@ ul.site-navigation {
     opacity: 0.3;
 }
 
-/*Популярные категории*/
-
-.popular a {
-    display: inline-block;
-    text-align: center;
-    list-style: none;
-    color: #000000;
-}
-
 .button {
     width: 220px;
     height: 40px;
@@ -122,18 +113,26 @@ ul.site-navigation {
     background: #f0c52e;
 }
 
+/*Популярные категории*/
+
 .popular a {
     width: 160px;
-    height: 240px;
-    margin-right: 40px;
+    display: inline-block;
+    list-style: none;
+    color: #000000;
     text-align: left;
 }
 
-.popular div {
-    display: block;
+.popular-image {
     width: 160px;
     height: 160px;
+    display: flex;
     background: #f7e296;
+
+}
+
+.popular > a > div > img {
+    margin: auto;
 }
 
 
