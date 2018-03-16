@@ -121,6 +121,8 @@ ul.site-navigation {
     list-style: none;
     color: #000000;
     text-align: left;
+    vertical-align:top;
+    margin-right: 40px;
 }
 
 .popular-image {
