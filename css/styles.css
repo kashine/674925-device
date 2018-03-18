@@ -37,7 +37,7 @@ a {
      color:#000000;
 }
 
-.yellow {
+.yellow-bg {
     width: 1160px;
     height: 300px;
     background-color: #f7e296;
@@ -178,12 +178,6 @@ a {
     margin-bottom: 35px;
 }
 
-.block1{
-    background-image: url(/img/popular/popular-1.svg);
-    background-repeat: no-repeat;
-    margin: auto;
-}
-
 .popular-image img {
     margin: auto;
 }
@@ -198,7 +192,7 @@ a {
 
 .popular-image:hover,
 .popular-image:focus{
-    background: #f0c52e;
+    background-color: #f0c52e;
     outline: none;
 }
 
@@ -388,12 +382,14 @@ a {
     padding:0;
 }
 
-.filter legend{
+.filter legend,
+.sort h2{
     border:none;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    padding: 0;
 }
 .filter-item h3{
     font-size:18px;
@@ -430,12 +426,12 @@ a {
 /* :hover, :focus, :active для кнопок */
 .interactive-button:hover,
 .interactive-button:focus {
-    background-image:#f0c52e;
+    background:#f0c52e;
     color: rgba(0, 0, 0, 0.6);
     outline: none;
 }
 
-.interactive-button:active {
+.interactive-button:active {ы
    color: rgba(0, 0, 0, 0.3);
 }
 
@@ -466,6 +462,8 @@ a {
 .sort-item {
     display: inline-block;
 }
+
+
 
 .sort-item a{
     font-family: "Open Sans";
