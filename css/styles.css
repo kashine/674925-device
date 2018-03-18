@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroyextrabold.woff2') format('woff2');
+    src: url('/fonts/gilroyextrabold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('gilroylight.woff2') format('woff2');
+    src: url('/fonts/gilroylight.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 
@@ -47,7 +47,7 @@ a {
 
 .search-input{
     width:310px;
-    height: 50px;
+    height: 47px;
     font-family: "Open Sans";
     font-weight: 300;
     color:rgba(0,0,0,0.3);
@@ -70,17 +70,31 @@ a {
 }
 
 .input-form input:focus{
+    color:#000000;
     border-bottom:2px solid black;
 }
+
+.input-form input:focus + input{
+    display: inline-block;
+}
+
 .search-button{
     width:85px;
     height: 50px;
     border:2px solid black;
     background: none;
     padding: 0;
-
+    margin-left:-4px;
+    display: none;
 }
-
+.search-button:hover{
+    color:#ffffff;
+    background:#000000;
+}
+.search-button:active{
+    color:rgba(0,0,0,0.3);
+    background:#000000;
+}
 .logo {
     font-size: 48px;
     text-transform: uppercase;
@@ -492,6 +506,7 @@ a {
     font-weight: 300;
     font-size: 14px;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .light{
@@ -513,6 +528,11 @@ a {
     border:none;
     padding:0 ;
 }
+.color input{
+    display: flex;
+    flex-direction: column;
+
+}
 
 /* :hover, :focus, :active для кнопок */
 .interactive-button:hover,
@@ -530,9 +550,63 @@ a {
 
 /*чекбоксы*/
 
+input[type="checkbox"],
+input[type="radio"] {
+    display:none;
+}
+
+input[type="checkbox"]{
+    content: "";
+    display:inline-block;
+    height: 27px;
+    width: 23px;
+    margin-right: 10px;
+    background-image: url(/img/checkbox-off.svg);
+}
+input[type="checkbox"]:checked{
+    content: "";
+    display:inline-block;
+    height: 27px;
+    width: 23px;
+    margin-right: 10px;
+    background-image: url("/img/checkbox-on.svg");
+}
+input[type="checkbox"]:checked:disabled{
+     content: "";
+    display:inline-block;
+    height: 27px;
+    width: 23px;
+    margin-right: 10px;
+    background-image: url(/img/checkbox-on.svg);
+    opacity: 0.25;
+}
+input[type="checkbox"]:disabled{
+     content: "";
+    display:inline-block;
+    height: 27px;
+    width: 23px;
+    margin-right: 10px;
+    background-image: url(/img/checkbox-off.svg);
+    opacity: 0.25;
+}
 
 
-
+input[type="radio"]{
+    content: "";
+    display:inline-block;
+    height: 27px;
+    width: 23px;
+    margin-right: 10px;
+    background-image: url("/img/radio-off.svg");
+}
+input[type="radio"]:checked{
+    content: "";
+    display:inline-block;
+    height: 27px;
+    width: 23px;
+    margin-right: 10px;
+    background-image: url("/img/radio-on.svg");
+}
 
 .interactive-filter input:hover,
 .interactive-filter:focus{
@@ -545,7 +619,7 @@ a {
 }
 
 
-
+/* Сортировка */
 .sort {
     display: flex;
 }
@@ -578,6 +652,10 @@ a {
     opacity: 1;
 }
 
+/* Продукты */
+.item-wrapper{
+    position: relative;
+}
 .item-title a{
     font-weight: 700;
     font-size: 18px;
@@ -590,6 +668,55 @@ a {
     color:#464646;
 }
 
+.item-background{
+    width:360px;
+    color:#000000;
+    text-align: center;
+    padding-top:180px;
+    padding-bottom:140px;
+    position:absolute;
+    top:0;
+    display: none;
+}
+
+.in-cart{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    width:200px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.2em;
+    background-image:linear-gradient(transparent 33%, #f0c52e 33%, #f0c52e 66%, transparent 66%) ;
+    margin: 0 auto;
+
+}
+
+.in-compare{
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 13px;
+    color:rgba(0,0,0,0.5)
+}
+.interactive-compare:hover,
+.interactive-compare:focus{
+    color:rgb(0,0,0);
+    outline: none;
+}
+
+.interactive-compare:active {
+    color:rgba(0,0,0,0.2)
+}
+
+.item-wrapper:hover img{
+    cursor: pointer;
+    opacity:0.7;
+}
+.item-wrapper:hover .item-background{
+    cursor: pointer;
+    display: block;
+}
 .paginator a {
     font-family: "Gilroy";
     font-weight: 700;

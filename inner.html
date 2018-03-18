@@ -14,10 +14,12 @@
         <div class="yellow-bg">
             <form action="#" method="get">
                 <label class="visually-hidden" for="site-search-id">
-                  Поиск по сайту
-                </label>
-                <img src="img/menu/search.svg" alt="Поиск">
-                <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту">
+                      Поиск по сайту
+                    </label>
+                <div class="input-form">
+                    <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту" class="search-input">
+                    <input type="submit" name="search-button" id="search-button-id" value="Найти" placeholder="Найти" class="search-button">
+                </div>
             </form>
             <section class="catalog">
                 <h2>
@@ -82,16 +84,21 @@
                 </li>
                 <li class="filter-item color">
                     <h3>Цвет</h3>
-                    <label for="black">Черный</label>
+
                     <input id="black" type="checkbox" name="black">
-                    <label for="white">Белый</label>
+                    <label for="black">Черный</label>
+
                     <input id="white" type="checkbox" name="white">
-                    <label for="indigo">Синий</label>
+                    <label for="white">Белый</label>
+
                     <input id="indigo" type="checkbox" name="indigo">
-                    <label for="red">Красный</label>
+                    <label for="indigo">Синий</label>
+
                     <input id="red" type="checkbox" name="red">
-                    <label for="pink">Розовый</label>
+                    <label for="red">Красный</label>
+
                     <input id="pink" type="checkbox" name="pink">
+                    <label for="pink">Розовый</label>
                 </li>
                 <li class="filter-item bluetooth">
                     <h3>Bluetooth</h3>
@@ -138,6 +145,10 @@
                         <a href="#">Любительская селфи-палка</a>
                     </h3>
                     <span class="price">500 руб.</span>
+                    <div class="item-background">
+                        <a class="in-cart interactive-button" href="#">В корзину</a>
+                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                    </div>
                 </li>
                 <li class="item-wrapper">
                     <img src="img/items/item-2.jpg" alt="Профессиональная селфи-палка">
@@ -145,6 +156,10 @@
                         <a href="#">Профессиональная селфи-палка</a>
                     </h3>
                     <span class="price">1500 руб.</span>
+                    <div class="item-background">
+                        <a class="in-cart interactive-button" href="#">В корзину</a>
+                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                    </div>
                 </li>
                 <li class="item-wrapper">
                     <img src="img/items/item-3.jpg" alt="Непотопляемая селфи-палка">
@@ -152,6 +167,10 @@
                         <a href="#">Непотопляемая селфи-палка</a>
                     </h3>
                     <span class="price">2500 руб.</span>
+                    <div class="item-background">
+                        <a class="in-cart interactive-button" href="#">В корзину</a>
+                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                    </div>
                 </li>
                 <li class="item-wrapper">
                     <img src="img/items/item-4.jpg" alt="Следуй за мной">
@@ -159,7 +178,14 @@
                         <a href="#">Селфи-палка "Следуй за мной"</a>
                     </h3>
                     <span class="price">4900 руб.</span>
+                    <div class="item-background">
+                        <a class="in-cart interactive-button" href="#">В корзину</a>
+                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                    </div>
                 </li>
+
+
+
             </ul>
         </section>
         <div class="paginator">
@@ -186,7 +212,7 @@
             </ul>
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social">
-               <li id="facebook">
+                <li id="facebook">
                     <a class="footer-social-img" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
                 </li>
                 <li id="instagram">
@@ -210,7 +236,7 @@
                         Валентин Петухов
                     </a>
                 </li>
-                     <li class="login-link">
+                <li class="login-link">
                     <a class="interactive" href="#">
                         Выйти
                     </a>
