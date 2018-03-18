@@ -38,19 +38,54 @@ a {
 }
 
 .yellow-bg {
-    width: 1160px;
+    width: 1040px;
     height: 300px;
     background-color: #f7e296;
+    padding-right:40px;
+    padding-left:40px;
 }
 
 .search-input{
+    width:310px;
+    height: 50px;
+    font-family: "Open Sans";
+    font-weight: 300;
     color:rgba(0,0,0,0.3);
+    border:none;
+    background: url(/img/menu/search.svg) no-repeat;
+    background-position:0 15px;
+    background-color:#f7e296;
+    outline:none;
+    padding-left:20px;
+    padding-top:0;
+    padding-bottom:0;
+
+}
+.search-input:hover{
+    color:rgba(0,0,0,0.6);
+}
+.input-form{
+    width:440px;
+    height: 50px;
+}
+
+.input-form input:focus{
+    border-bottom:2px solid black;
+}
+.search-button{
+    width:85px;
+    height: 50px;
+    border:2px solid black;
+    background: none;
+    padding: 0;
+
 }
 
 .logo {
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;
+    margin-left:40px;
 }
 
 .catalog,
@@ -190,13 +225,19 @@ a {
     vertical-align: bottom;
 }
 
+
+
 .popular-image:hover,
 .popular-image:focus{
+
+
     background-color: #f0c52e;
     outline: none;
 }
 
-.popular a:active{
+.tile:active img,
+.tile:active h3{
+    opacity:0.3;
     color:rgba(0,0,0,0.3);
 }
 
@@ -225,7 +266,13 @@ a {
     border:none;
     padding:0 ;
 }
-
+.services-navigation li:hover{
+    background: #f0c52e;
+}
+.services-navigation li:active{
+    background:#000000;
+    color:#f7e184;
+}
 .services-text{
     width: 480px;
 }
@@ -233,6 +280,8 @@ a {
     font-weight: 700;
     font-size:47px;
 }
+
+
 
 .services-text p{
     font-family:"Open sans";
@@ -257,10 +306,52 @@ a {
 }
 
 .logotypes li {
+    width:260px;
+    height: 100px;
     list-style: none;
     display: inline-block;
     margin-right: 40px;
+
 }
+
+.logotypes li:nth-child(1){
+    background-image:url(/img/logotypes-black/logo-1.png);
+    opacity: 0.2;
+}
+.logotypes li:nth-child(1):hover{
+    background-image:url(/img/logotypes_colored/logo-1.png);
+    opacity: 1;
+}
+
+
+.logotypes li:nth-child(2){
+    background:url(/img/logotypes-black/logo-2.png) no-repeat;
+    opacity: 0.2;
+}
+.logotypes li:nth-child(2):hover{
+    background-image:url(/img/logotypes_colored/logo-2.png);
+    opacity: 1;
+}
+
+.logotypes li:nth-child(3){
+    background:url(/img/logotypes-black/logo-3.png) no-repeat;
+    opacity: 0.2;
+}
+
+.logotypes li:nth-child(3):hover{
+    background-image:url(/img/logotypes_colored/logo-3.png);
+    opacity: 1;
+}
+
+.logotypes li:nth-child(4){
+    background:url(/img/logotypes-black/logo-4.png) no-repeat;
+    opacity: 0.2;
+}
+.logotypes li:nth-child(4):hover{
+    background-image:url(/img/logotypes_colored/logo-4.png);
+    opacity: 1;
+}
+
 
 /*О нас, Контакты*/
 
@@ -431,7 +522,7 @@ a {
     outline: none;
 }
 
-.interactive-button:active {ы
+.interactive-button:active {
    color: rgba(0, 0, 0, 0.3);
 }
 
