@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/gilroyextrabold.woff2') format('woff2');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/gilroylight.woff2') format('woff2');
+    src: url('../fonts/gilroylight.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 
@@ -47,7 +47,7 @@ a {
 
 .search-input{
     width:310px;
-    height: 47px;
+    height: 49px;
     font-family: "Open Sans";
     font-weight: 300;
     color:rgba(0,0,0,0.3);
@@ -94,6 +94,7 @@ a {
 .search-button:active{
     color:rgba(0,0,0,0.3);
     background:#000000;
+    display:inline-block;
 }
 .logo {
     font-size: 48px;
