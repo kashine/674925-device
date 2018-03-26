@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <a class="main-header-logo logo interactive">Device</a>
+    <header class="main-header layout-fixed">
+        <a class="logo interactive">Device</a>
         <div class="header-yellow-bg">
+            <div class="header-right-block">
             <form action="#" method="get">
                 <label class="visually-hidden" for="site-search-id">
                       Поиск по сайту
@@ -22,6 +23,7 @@
                     <input type="submit" name="search-button" id="search-button-id" value="Найти" placeholder="Найти" class="search-button">
                 </div>
             </form>
+
             <section class="catalog">
                 <h2>
                     <span class="interactive">Каталог товаров</span>
@@ -37,6 +39,7 @@
                     <li class="interactive"><a href="#">Квадрокоптеры</a></li>
                 </ul>
             </section>
+            </div>
             <nav class="main-navigation">
                 <ul class="user-navigation">
                     <li class="user-name">
@@ -58,15 +61,16 @@
                     </a>
                     </li>
                 </ul>
-                <ul class="site-navigation">
-                    <li><a class="interactive" href="delivery.html">Доставка</a></li>
-                    <li><a class="interactive" href="guarantee.html">Гарантия</a></li>
-                    <li><a class="interactive" href="contacts.html">Контакты</a></li>
+                 <ul class="site-navigation">
+                    <li class="delivery-nav interactive"><a href="#delivery">Доставка</a></li>
+                    <li class="warranty-nav interactive"><a href="#warranty">Гарантия</a></li>
+                    <li class="contacts-nav interactive"><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <div class="layout-fixed">
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
             <li><a class="interactive-breadcrumbs" href="#">Главная
@@ -79,11 +83,11 @@
         </ul>
         <fieldset class="filter">
             <legend>Фильтр:</legend>
-            <ul>
-                <li class="filter-item item-price">
+            <ul class="filter-item">
+                <li class=" item-price">
                     <h3 class="price-range">Стоимость</h3> <span class="light">от 0</span><input type="range" min="0" max="10000" step="100" id="price-range"><span class="light">до 5000</span>
                 </li>
-                <li class="filter-item color">
+                <li class="item-color">
                     <h3>Цвет</h3>
 
                     <input id="black" type="checkbox" name="black">
@@ -101,16 +105,19 @@
                     <input id="pink" type="checkbox" name="pink">
                     <label for="pink">Розовый</label>
                 </li>
-                <li class="filter-item bluetooth">
+                <li class="bluetooth">
                     <h3>Bluetooth</h3>
+                    <input id="yes" type="radio" name="bluetooth">
                     <label for="yes">Есть</label>
-                    <input id="yes" type="radio" name="bluetooth" checked>
-                    <label for="no">Нет</label>
                     <input id="no" type="radio" name="bluetooth">
+                    <label for="no">Нет</label>
+
                 </li>
             </ul>
             <input class="filter-button interactive-button" type="submit" value="показать" id="show-results">
+
         </fieldset>
+
         <section class="sort">
             <h2>Сортировка:</h2>
             <ul>
@@ -184,9 +191,6 @@
                         <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
                     </div>
                 </li>
-
-
-
             </ul>
         </section>
         <div class="paginator">
@@ -196,8 +200,10 @@
             <a class="interactive-page" href="#3">3</a>
             <a class="interactive-go" href="#next">Вперёд</a>
         </div>
+        </div>
     </main>
     <footer class="page-footer">
+         <div class="footer-content layout-fixed">
         <section class="footer-block1">
             <h2 class="visually-hidden">Информация о компании</h2>
             <a href="#" class="footer-logo logo interactive">Device
@@ -226,10 +232,10 @@
         </section>
         <section class="footer-block3">
             <h2 class="visually-hidden">Меню пользователя</h2>
-            <ul>
+            <ul class="footer-user-nav">
                 <li class="login-link">
                     <a class="interactive" href="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg fill=#ffc600 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
                             <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
                                 C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
@@ -244,7 +250,7 @@
                 </li>
                 <li class="compare">
                     <a class="interactive" href="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg fill=#ffc600 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
                         <rect x="8" y="2" width="1.984" height="8"/>
                         <rect y="3" width="1.984" height="7"/>
@@ -254,7 +260,7 @@
                 </li>
                 <li class="cart">
                     <a class="interactive" href="#">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg fill=#ffc600 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
                     <g>
                         <path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022
@@ -272,12 +278,12 @@
             </ul>
             <p>тел.+7(495)495-95-95</p>
             <a class="interactive" href="https://htmlacademy.ru/intensive/htmlcss">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <svg fill=#ffc600 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                   s<path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
                 </svg>
             </a>
         </section>
-
+        </div>
     </footer>
 </body>
 
