@@ -165,7 +165,7 @@ a {
 
 }
 
-.catalog-header:hover .catalog-options{
+.catalog-header:hover+.catalog-options{
     display:flex;
     z-index:2;
 }
@@ -238,7 +238,9 @@ a {
 .interactive:active {
     opacity: 0.3;
 }
-
+main{
+    position:relative;
+}
 /*Слайдер*/
 
 .slide1{
