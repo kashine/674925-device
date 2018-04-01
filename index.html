@@ -11,7 +11,7 @@
 
 <body>
     <header class="main-header layout-fixed">
-        <a class="logo interactive">Device</a>
+        <a href="/index.html" class="logo interactive">Device</a>
         <div class="header-yellow-bg">
             <div class="header-right-block">
                 <form action="#" method="get">
@@ -24,7 +24,7 @@
                 <section class="catalog">
                     <h2 class="catalog-header">
                         <span class="interactive">Каталог товаров</span>
-                        <img src="img/menu/plus.png" alt="Раскрыть каталог">
+                        <img src="img/menu/plus.png" alt="Раскрыть каталог" width="16" height="16">
                     </h2>
                     <div class="catalog-options">
                         <ul class="ul-reset">
@@ -46,17 +46,17 @@
                 <ul class="user-navigation ul-reset">
                     <li class="login-link ">
                         <a class="interactive" href="#">
-                            <img src="img/menu/user.svg" alt="Войти">Войти
+                            <img src="img/menu/user.svg" alt="Войти"  width="13" height="12">Войти
                         </a>
                     </li>
                     <li class="compare">
                         <a class="interactive" href="#">
-                            <img src="img/menu/compare.svg" alt="Сравнить">Сравнить
+                            <img src="img/menu/compare.svg" alt="Сравнить" width="10" height="10">Сравнить
                         </a>
                     </li>
                     <li class="cart">
                         <a class="interactive" href="#">
-                            <img src="img/menu/cart.svg" alt="Корзина">Корзина
+                            <img src="img/menu/cart.svg" alt="Корзина"  width="12" height="12">Корзина
                         </a>
                     </li>
                 </ul>
@@ -72,7 +72,7 @@
         <section class="promo-slider layout-fixed">
             <h2 class="visually-hidden">Промо слайдер</h2>
             <div class="slide1">
-                <img src="img/promo_slider/slider-1.png" alt="палка для селфи">
+                <img src="img/promo_slider/slider-1.png" alt="палка для селфи" width="384" height="486">
                 <div class="slide-info">
                     <div class="slider-outline"></div>
                     <p class="lead">Делай селфи,<br><span class="bw-number">01</span> как Бен Стиллер!</p>
@@ -94,39 +94,43 @@
             </div>
 <!--        <div class="slide2">
                 <img src="img/promo_slider/slider-2.png" alt="фитнес-браслет">
-                <p class="lead">Худеем правильно!</p>
-                <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
-                <a class="slider-button interactive-button" href="#">Подробнее</a>
-                <table class="promo-slider-table">
-                    <tr>
-                        <td>48 часов</td>
-                    </tr>
-                    <tr>
-                        <td>Без подзарядки</td>
-                    </tr>
-                </table>
+                <div class="slide-info">
+                    <p class="lead">Худеем<br><span class="bw-number">02</span> правильно!</p>
+                    <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
+                    <a class="slider-button interactive-button" href="#">Подробнее</a>
+                    <table class="promo-slider-table">
+                        <tr>
+                            <td>48 часов</td>
+                        </tr>
+                        <tr>
+                            <td>Без подзарядки</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="slide3">
                 <img src="img/promo_slider/slider-3.png" alt="квадрокоптер">
-                <p class="lead">Порхает как бабочка, жалит как пчела!</p>
-                <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="slider-button interactive-button" href="#">Подробнее</a>
-                <table class="promo-slider-table">
-                    <tr>
-                        <td>800 м</td>
-                        <td>50 м</td>
-                    </tr>
-                    <tr>
-                        <td>Дальность полета</td>
-                        <td>Радиус поражения</td>
-                    </tr>
-                </table>
+                <div class="slide-info">
+                    <p class="lead">Порхает как бабочка, жалит как пчела!</p>
+                    <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                    <a class="slider-button interactive-button" href="#">Подробнее</a>
+                    <table class="promo-slider-table">
+                        <tr>
+                            <td>800 м</td>
+                            <td>50 м</td>
+                        </tr>
+                        <tr>
+                            <td>Дальность полета</td>
+                            <td>Радиус поражения</td>
+                        </tr>
+                    </table>
+                </div>
             </div>-->
-            <p>
+            <form>
                 <input type="radio" name="slider" value="first">
                 <input type="radio" name="slider" value="second">
                 <input type="radio" name="slider" value="third">
-            </p>
+            </form>
         </section>
         <section class="popular layout-fixed">
             <h2 class="visually-hidden">Популярные категории</h2>
@@ -139,7 +143,7 @@
             </a>
             <a class="tile" href="inner.html">
                 <div class="popular-image">
-                    <img src="img/popular/popular-2.svg" alt="моноподы для селфи">
+                    <img src="img/popular/popular-2.svg" alt="моноподы для селфи" >
                 </div>
                 <h3>Моноподы для селфи</h3>
             </a>
@@ -184,7 +188,7 @@
                         <h3>Доставка</h3>
                         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     </div>
-                    <img src="img/services/delivery.svg" alt="доставка">
+                    <img src="img/services/delivery.svg" alt="доставка" width="136" height="164">
                 </div>
                 <!--
                 <div class="warranty">
@@ -228,10 +232,10 @@
                     <div class="about-contacts-outline"></div>
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a class="contacts-map" href="#"><img src="img/map.png" alt="г. Москва, ул Строителей, 15"/></a>
-                    <div class="map-popup modal"><img src="/img/map-big.jpg" alt="Большая карта"/></div>
+                    <a class="contacts-map" href="#"><img src="img/map.png" alt="г. Москва, ул Строителей, 15"width="560" height="222"/></a>
+                    <div class="map-popup modal"><img src="/img/map-big.jpg" alt="Большая карта" width="960" height="559"/></div>
                     <a class="about-contacts-btn interactive-button" href="#">Напишите нам</a>
-                    <div class="modal-write-us modal">
+                    <form method="post" action="#" class="modal-write-us modal">
                         <button class="modal-close" type="button"></button>
                         <div class="modal-row1">
                             <div class="form-group">
@@ -250,7 +254,7 @@
                             </div>
                         </div>
                         <input class="modal-button interactive-button" type="submit" name="send" id="send-letter" value="Отправить">
-        </div>
+                    </form>
                 </article>
             </div>
         </section>
@@ -260,7 +264,7 @@
             <section>
                 <h2 class="visually-hidden">Меню пользователя</h2>
                 <div class="footer-row footer-row1">
-                    <a href="#" class="footer-logo logo interactive">Device
+                    <a href="/index.html" class="footer-logo logo interactive">Device
                     </a>
                     <ul class="footer-user-nav">
                         <li class="login-link">

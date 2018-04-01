@@ -83,7 +83,7 @@ a {
 .search-input {
     width: 310px;
     height: 50px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.3);
     border: none;
@@ -184,7 +184,7 @@ a {
 }
 
 .catalog-options ul {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     width: 160px;
     margin-right: 40px;
@@ -219,7 +219,7 @@ a {
 
 .user-navigation li {
     line-height: 15px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
 
 }
@@ -307,7 +307,7 @@ main {
 }
 
 .slide-text {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #464646;
     letter-spacing: 0.01em;
@@ -327,7 +327,7 @@ main {
 }
 
 .promo-slider-table .property {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 300;
     color: #464646;
@@ -467,7 +467,7 @@ main {
 }
 
 .services-text p {
-    font-family: "Open sans";
+    font-family: "Open sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: #464646;
@@ -561,7 +561,7 @@ main {
 
 .about-us p,
 .contacts p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #464646;
     margin: 0;
@@ -730,7 +730,7 @@ main {
 }
 
 .modal-input {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
@@ -978,14 +978,16 @@ main {
 }
 
 .filter-item label {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 23px;
     cursor: pointer;
     margin-bottom: 15px;
 }
-
+.price-controls{
+    cursor: pointer;
+}
 .price-controls label {
     display: inline-block;
     font-size: 14px;
@@ -1204,7 +1206,7 @@ input[type="radio"]:disabled + label:before {
 
 
 .sort-item a {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: rgb(0, 0, 0);
@@ -1217,8 +1219,9 @@ input[type="radio"]:disabled + label:before {
 
 .arrow {
     opacity: 0.3;
-    margin-left: 15px;
+
 }
+
 
 .interactive-sort:hover,
 .interactive-sort:focus {
@@ -1324,7 +1327,7 @@ input[type="radio"]:disabled + label:before {
 }
 
 .in-compare {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.5)
