@@ -223,31 +223,35 @@
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a class="about-contacts-button interactive-button" href="#">Подробнее о нас</a>
+                    <a class="about-contacts-btn interactive-button" href="#">Подробнее о нас</a>
                 </article>
                 <article class="contacts">
                     <div class="about-contacts-outline"></div>
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a href="#"><img src="img/map.png" alt="г. Москва, ул Строителей, 15"></a>
-                    <a class="about-contacts-button interactive-button" href="#">Напишите нам</a>
-                    <!--
-                    <form class="write_us" action="https://echo.htmlacademy.ru" method="post">
-                        <p>
-                            <label for="user-name-id">Ваше имя:</label>
-                            <input type="text" name="user-name" id="user-name-id" placeholder="Имя Фамилия">
-                        </p>
-                        <p>
-                            <label for="user-e-mail-id">Ваш e-mail:</label>
-                            <input type="text" name="user-e-mail" id="user-e-mail-id" placeholder="email@example.com">
-                        </p>
-                        <p>
-                            <label for="text-letter-id">Текст письма:</label>
-                            <textarea name="letter" id="text-letter-id" cols="12" rows="5">В свободной форме</textarea>
-                        </p>
-                        <input type="submit" name="send" id="send-letter" value="Отправить">
-                    </form>
-                   -->
+                    <a class="contacts-map" href="#"><img src="img/map.png" alt="г. Москва, ул Строителей, 15"/></a>
+                    <div class="map-popup modal"><img src="/img/map-big.jpg" alt="Большая карта"/></div>
+                    <a class="about-contacts-btn interactive-button" href="#">Напишите нам</a>
+                    <div class="modal-write-us modal">
+                        <button class="modal-close" type="button"></button>
+                        <div class="modal-row1">
+                            <div class="form-group">
+                                <label for="user-name-id">Ваше имя:</label>
+                                <input class="modal-input" type="text" name="user-name" id="user-name-id" placeholder="Имя Фамилия">
+                            </div>
+                            <div class="form-group">
+                                <label for="user-e-mail-id">Ваш e-mail:</label>
+                                <input class="modal-input" type="email" name="user-e-mail" id="user-e-mail-id" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div class="modal-row2">
+                            <div class="form-group">
+                                <label for="text-letter-id">Текст письма:</label>
+                                <textarea class="modal-input" name="letter" id="text-letter-id" cols="12" rows="5" placeholder="В свободной форме"></textarea>
+                            </div>
+                        </div>
+                        <input class="modal-button interactive-button" type="submit" name="send" id="send-letter" value="Отправить">
+        </div>
                 </article>
             </div>
         </section>
@@ -336,6 +340,7 @@
             </section>
             </div>
         </footer>
+
     </body>
 
 </html>
