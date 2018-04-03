@@ -28,16 +28,27 @@
                     </h2>
                     <div class="catalog-options">
                         <ul class="ul-reset">
-                            <li id="virtual-reality" class="interactive"><a href="#">Виртуальная реальность</a></li>
-                            <li class="interactive"><a href="inner.html">Моноподы для селфи</a></li>
-                            <li id="action_cameras" class="interactive"><a href="#">Экшн-Камеры</a></li>
+                            <li id="virtual-reality" class="interactive">
+                                <a href="#">Виртуальная реальность</a>
+                            </li>
+                            <li class="interactive">
+                                <a href="inner.html">Моноподы для селфи</a>
+                            </li>
+                            <li id="action_cameras" class="interactive">
+                                <a href="#">Экшн-Камеры</a>
+                            </li>
                         </ul>
                         <ul class="ul-reset">
-                            <li id="fitness-braslets" class="interactive"><a href="#">Фитнес браслеты</a></li>
-                            <li id="smart-watches" class="interactive"><a href="#">Умные часы</a></li>
+                            <li id="fitness-braslets" class="interactive">
+                                <a href="#">Фитнес браслеты</a>
+                            </li>
+                            <li id="smart-watches" class="interactive"><a href="#">Умные часы</a>
+                            </li>
                         </ul>
                         <ul class="ul-reset">
-                            <li id="quadrupter" class="interactive"><a href="#">Квадрокоптеры</a></li>
+                            <li id="quadrupter" class="interactive">
+                                <a href="#">Квадрокоптеры</a>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -59,12 +70,17 @@
                             <img src="img/menu/cart.svg" alt="Корзина"  width="12" height="12">Корзина
                         </a>
                     </li>
-
                 </ul>
                 <ul class="site-navigation ul-reset">
-                    <li class="delivery-nav interactive"><a href="#delivery">Доставка</a></li>
-                    <li class="warranty-nav interactive"><a href="#warranty">Гарантия</a></li>
-                    <li class="contacts-nav interactive"><a href="#contacts">Контакты</a></li>
+                    <li class="delivery-nav interactive">
+                        <a href="#delivery">Доставка</a>
+                    </li>
+                    <li class="warranty-nav interactive">
+                        <a href="#warranty">Гарантия</a>
+                    </li>
+                    <li class="contacts-nav interactive">
+                        <a href="#contacts">Контакты</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -132,11 +148,11 @@
                 </div>
                 <div class="radio-group">
                     <input type="radio" name="slider" id="first">
-                    <label for id="first"></label>
+                    <label for="first"></label>
                     <input type="radio" name="slider" id="second">
-                    <label for id="second"></label>
+                    <label for="second"></label>
                     <input type="radio" name="slider" id="third">
-                    <label for id="third"></label>
+                    <label for="third"></label>
                 </div>
             </div>
         </section>
@@ -150,7 +166,7 @@
                     <h3>Виртуальная реальность</h3>
                 </a>
                 <a class="tile" href="inner.html">
-                    <div class="popular-image">
+                    <div class="popular-image img-position">
                         <img src="img/popular/popular-2.svg" alt="моноподы для селфи" width="86" height="117">
                     </div>
                     <h3>Моноподы для селфи</h3>
@@ -248,32 +264,10 @@
                     <a class="about-contacts-btn interactive-button" href="#">Подробнее о нас</a>
                 </article>
                 <article class="contacts">
-                    <div class="about-contacts-outline"></div>
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <a class="contacts-map" href="#"><img src="img/map.png" alt="г. Москва, ул Строителей, 15" width="560" height="222"/></a>
-                    <div class="map-popup modal"><img src="/img/map-big.jpg" alt="Большая карта" width="960" height="559" /></div>
-                    <a class="about-contacts-btn interactive-button" href="#">Напишите нам</a>
-                    <form method="post" action="#" class="modal-write-us modal">
-                        <button class="modal-close" type="button"></button>
-                        <div class="modal-row1">
-                            <div class="form-group">
-                                <label for="user-name-id">Ваше имя:</label>
-                                <input class="modal-input" type="text" name="user-name" id="user-name-id" placeholder="Имя Фамилия" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="user-e-mail-id">Ваш e-mail:</label>
-                                <input class="modal-input" type="email" name="user-e-mail" id="user-e-mail-id" placeholder="email@example.com" required>
-                            </div>
-                        </div>
-                        <div class="modal-row2">
-                            <div class="form-group">
-                                <label for="text-letter-id">Текст письма:</label>
-                                <textarea class="modal-input" name="letter" id="text-letter-id" cols="12" rows="5" placeholder="В свободной форме" required></textarea>
-                            </div>
-                        </div>
-                        <input class="modal-button interactive-button" type="submit" name="send" id="send-letter" value="Отправить">
-                    </form>
+                    <a class="about-contacts-btn interactive-button write-us-btn" href="#">Напишите нам</a>
                 </article>
             </div>
         </section>
@@ -291,7 +285,7 @@
                                          width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
                                     <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
                                         C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
-                                    </svg>Войти
+                                </svg>Войти
                             </a>
                         </li>
                         <li class="compare">
@@ -328,9 +322,15 @@
                 <div class="footer-row footer-row2">
                     <span>г. Москва, ул Строителей, 15</span>
                     <ul class="footer-services">
-                        <li><a class="interactive" href="#delivery">Доставка</a></li>
-                        <li><a class="interactive" href="#warranty">Гарантия</a></li>
-                        <li><a class="interactive" href="#contacts">Контакты</a></li>
+                        <li>
+                            <a class="interactive" href="#delivery">Доставка</a>
+                        </li>
+                        <li>
+                            <a class="interactive" href="#warranty">Гарантия</a>
+                        </li>
+                        <li>
+                            <a class="interactive" href="#contacts">Контакты</a>
+                        </li>
                     </ul>
                     <span>Тел.: +7(495)495-95-95</span>
                 </div>
@@ -340,13 +340,19 @@
                 <div class="footer-row footer-row3">
                     <ul class="footer-social">
                         <li id="facebook">
-                            <a class="footer-social-img" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
+                            <a class="footer-social-img" href="#">
+                                <img src="img/social/fb.svg" alt="Фейсбук">
+                            </a>
                         </li>
                         <li id="instagram">
-                            <a class="footer-social-img" href="#"><img src="img/social/insta.svg" alt="Инстаграм"></a>
+                            <a class="footer-social-img" href="#">
+                                <img src="img/social/insta.svg" alt="Инстаграм">
+                            </a>
                         </li>
                         <li id="twitter">
-                            <a class="footer-social-img" href="#"><img src="img/social/twitter.svg" alt="Твиттер"></a>
+                            <a class="footer-social-img" href="#">
+                                <img src="img/social/twitter.svg" alt="Твиттер">
+                            </a>
                         </li>
                     </ul>
                     <a class="interactive" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -358,6 +364,116 @@
             </section>
         </div>
     </footer>
+    <section class="map-popup modal">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.527429316262506!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522791568439" width="960" height="559" allowfullscreen></iframe>
+        <p><img src="/img/map-big.jpg" alt="Офис компании по адресу г. Москва, ул Строителей, 15" width="960" height="559" /></p>
+        <button class="modal-close" type="button"></button>
+    </section>
+    <section class="modal-write-us modal">
+        <h2 class="visually-hidden">Форма сообщения для компании</h2>
+        <form method="post" action="#" class="write-us-form">
+            <button class="modal-close" type="button"></button>
+            <div class="modal-row1">
+                <div class="form-group">
+                    <label for="user-name-id">Ваше имя:</label>
+                    <input class="modal-input" type="text" name="user-name" id="user-name-id" placeholder="Имя Фамилия">
+                </div>
+                <div class="form-group">
+                    <label for="user-e-mail-id">Ваш e-mail:</label>
+                    <input class="modal-input" type="email" name="user-e-mail" id="user-e-mail-id" placeholder="email@example.com">
+                </div>
+            </div>
+            <div class="modal-row2">
+                <div class="form-group">
+                    <label for="text-letter-id">Текст письма:</label>
+                    <textarea class="modal-input" name="letter" id="text-letter-id" cols="12" rows="5" placeholder="В свободной форме"></textarea>
+                </div>
+            </div>
+            <input class="modal-button interactive-button" type="submit" name="send" id="send-letter" value="Отправить">
+        </form>
+    </section>
+    <script>
+        var link = document.querySelector(".write-us-btn");
+        var popup = document.querySelector(".modal-write-us");
+        var close = popup.querySelector(".modal-close");
+        var form = popup.querySelector("form");
+        var user = popup.querySelector("[name=user-name]");
+        var email = popup.querySelector("[name=user-e-mail]");
+        var text = popup.querySelector("[name=letter]");
+
+        var isStorageSupport = true;
+        var storage = "";
+
+        try {
+            storage = localStorage.getItem("login");
+        } catch (err) {
+            isStorageSupport = false;
+        }
+
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+
+            if (storage) {
+                user.value = storage;
+                email.focus();
+            } else {
+                user.focus();
+            }
+        });
+        close.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+        });
+        form.addEventListener("submit", function(evt) {
+            if (!user.value || !email.value || !text.value) {
+                evt.preventDefault();
+                popup.classList.remove("modal-error");
+                popup.offsetWidth = popup.offsetWidth;
+                popup.classList.add("modal-error");
+                console.log("Нужно ввести данные");
+            } else {
+                if (isStorageSupport) {
+                    localStorage.setItem("user", user.value);
+                }
+            }
+        });
+
+        window.addEventListener("keydown", function(evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                    popup.classList.remove("modal-error");
+                }
+            }
+        });
+
+        var mapLink = document.querySelector(".contacts-map");
+        var mapPopup = document.querySelector(".map-popup");
+        var mapClose = mapPopup.querySelector(".modal-close");
+
+        mapLink.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            mapPopup.classList.add("modal-show");
+        });
+
+        mapClose.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            mapPopup.classList.remove("modal-show");
+        });
+
+        window.addEventListener("keydown", function(evt) {
+            evt.preventDefault();
+            if (evt.keyCode === 27) {
+                if (mapPopup.classList.contains("modal-show")) {
+                    mapPopup.classList.remove("modal-show");
+                }
+            }
+        });
+    </script>
 
 </body>
 

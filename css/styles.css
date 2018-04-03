@@ -2,7 +2,7 @@
     font-family: "Gilroy";
     src: url("../fonts/gilroyextrabold-webfont.eot");
     src: url("../fonts/gilroyextrabold-webfont.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
+    url("../fonts/gilroyextrabold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
 
@@ -12,7 +12,7 @@
     font-family: "Gilroy";
     src: url("../fonts/gilroylight-webfont.eot");
     src: url("../fonts/gilroylight-webfont.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/gilroylight-webfont.woff2") format("woff2");
+    url("../fonts/gilroylight.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
 
@@ -34,8 +34,9 @@
 }
 
 body {
+    min-width: 1200px;
     padding: 0;
-    font-family: "Gilroy", "Open Sans", "Arial", sans-serif;
+    font-family: "Gilroy", "Open Sans", sans-serif;
     font-size: 15px;
     line-height: 30px;
     color: #000000;
@@ -63,14 +64,14 @@ a {
 }
 
 .main-header {
-    padding-top: 24px;
+    padding-top: 40px;
 }
 
 .main-header .logo {
     position: absolute;
     display: block;
     margin-left: 60px;
-    top: 0;
+    top: 15px;
     z-index: 1;
 }
 
@@ -95,7 +96,7 @@ a {
 .search-input {
     width: 310px;
     height: 50px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.3);
     border: none;
@@ -167,7 +168,7 @@ a {
 
 .catalog > h2 {
     margin: 0;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
@@ -202,7 +203,7 @@ a {
 }
 
 .catalog-options ul {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     width: 160px;
     margin-right: 40px;
@@ -237,7 +238,7 @@ a {
 
 .user-navigation li {
     line-height: 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     flex-direction: row-reverse;
 }
@@ -252,7 +253,7 @@ a {
 }
 
 .site-navigation {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
@@ -287,9 +288,9 @@ main {
 .slides {
     min-height: 495px;
     position: relative;
-    background-image: -webkit-linear-gradient(#f7e296 110px, white 110px);
-    background-image: -o-linear-gradient(#f7e296 110px, white 110px);
-    background-image: linear-gradient(#f7e296 110px, white 110px);
+    background-image: -webkit-linear-gradient(#f7e296 115px, white 115px);
+    background-image: -o-linear-gradient(#f7e296 115px, white 115px);
+    background-image: linear-gradient(#f7e296 115px, white 115px);
 }
 
 .slide-img {
@@ -297,7 +298,7 @@ main {
 }
 
 .slide1 {
-    display: none;
+    display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
@@ -316,10 +317,9 @@ main {
 }
 
 .slide2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
+
+    display: none;
+
     justify-content: space-around;
 }
 
@@ -387,7 +387,7 @@ main {
 }
 
 .slide-text {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     color: #464646;
     letter-spacing: 0.01em;
@@ -396,7 +396,7 @@ main {
 }
 
 .promo-slider-table .options {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 300;
     color: #464646;
@@ -408,7 +408,7 @@ main {
 }
 
 .promo-slider-table .property {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
     color: #464646;
@@ -471,7 +471,7 @@ main {
 
 .popular {
     margin-bottom: 80px;
-    margin-top: 92px;
+    margin-top: 100px;
 
 }
 
@@ -491,6 +491,10 @@ main {
 .popular a {
     width: 160px;
     list-style: none;
+}
+
+.img-position img {
+    align-self: flex-end
 }
 
 .popular-image {
@@ -537,7 +541,7 @@ main {
     background-image: -webkit-linear-gradient(transparent 100px, #e5e5e5 100px);
     background-image: -o-linear-gradient(transparent 100px, #e5e5e5 100px);
     background-image: linear-gradient(transparent 100px, #e5e5e5 100px);
-    padding-bottom: 70px;
+    padding-bottom: 65px;
 }
 
 .services-content {
@@ -586,7 +590,7 @@ main {
 }
 
 .services-navigation li:active {
-    width: 285px;
+    width: 280px;
     background: #000000;
     color: #f7e184;
 }
@@ -608,14 +612,14 @@ main {
 }
 
 .services-text p {
-    font-family: "Open sans", sans-serif;
+    font-family: "Open sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: #464646;
 }
 
 .delivery {
-    display: none;
+    display: flex;
 }
 
 .delivery img {
@@ -633,9 +637,7 @@ main {
 }
 
 .credit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
 }
 
 .credit img {
@@ -650,7 +652,7 @@ main {
 /*Brands*/
 
 .brands {
-    padding: 75px 0 80px;
+    padding: 80px 0;
 }
 
 .brands ul {
@@ -745,7 +747,7 @@ main {
 
 .about-us p,
 .contacts p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     color: #464646;
     margin: 0;
@@ -765,7 +767,7 @@ main {
     font-weight: 700;
     line-height: 40px;
     padding: 0;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 20px;
     list-style-type: circle;
     list-style-position: outside;
@@ -796,18 +798,72 @@ main {
 }
 
 .contacts-map img {
-    margin-top: 15px
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+/*Попапы*/
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
 }
 
 .map-popup {
-    top: 71%;
+    top: 190%;
     left: 50%;
     margin-left: -470px;
     display: none;
+    line-height: 0;
 }
 
-.contacts-map:active + .map-popup {
-    display: block;
+.map-popup p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+}
+
+.map-popup iframe {
+    position: relative;
+    z-index: 2;
+    border: none;
 }
 
 .modal {
@@ -835,10 +891,13 @@ main {
 
 }
 
-.about-contacts-btn:active + .modal-write-us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .modal-close {
@@ -851,6 +910,7 @@ main {
     border: 1px solid #F7E296;
     border-radius: 50%;
     opacity: 0.5;
+    z-index: 3;
 }
 
 .modal-close:hover {
@@ -940,7 +1000,7 @@ main {
 }
 
 .modal-input {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
@@ -973,6 +1033,7 @@ main {
 /*Footer*/
 
 .page-footer {
+
     color: #ffffff;
     background-color: #464646;
     padding-top: 60px;
@@ -1052,7 +1113,7 @@ main {
 }
 
 .footer-services {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
@@ -1270,7 +1331,7 @@ main {
 }
 
 .filter-item label {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 23px;
@@ -1524,7 +1585,7 @@ input[type="checkbox"]:disabled + label:before {
 }
 
 .sort-item a {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: rgb(0, 0, 0);
@@ -1662,7 +1723,7 @@ input[type="checkbox"]:disabled + label:before {
 }
 
 .in-compare {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.5)
@@ -1714,7 +1775,9 @@ input[type="checkbox"]:disabled + label:before {
 }
 
 .paginator a {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
+
+
     font-weight: 700;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.3);
