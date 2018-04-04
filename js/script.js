@@ -1,3 +1,5 @@
+"use strict";
+
 var link = document.querySelector(".write-us-btn");
 var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-close");
@@ -34,9 +36,7 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
     if (!user.value || !email.value || !text.value) {
         evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
+        popup.classList.add("modal-ersror");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("user", user.value);
@@ -69,8 +69,8 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+        evt.preventDefault();
         if (mapPopup.classList.contains("modal-show")) {
             mapPopup.classList.remove("modal-show");
         }
