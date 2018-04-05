@@ -1,4 +1,4 @@
-"use strict";
+
 
 var link = document.querySelector(".write-us-btn");
 var popup = document.querySelector(".modal-write-us");

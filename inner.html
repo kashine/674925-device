@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +15,7 @@
         <div class="header-yellow-bg">
             <div class="header-right-block">
                 <form action="#" method="get">
-                    <label class="visually-hidden" for="site-search-id">
-                          Поиск по сайту
-                        </label>
+                    <label class="visually-hidden" for="site-search-id">Поиск по сайту</label>
                     <div class="input-form">
                         <input type="text" name="search" id="site-search-id" placeholder="Поиск по сайту" class="search-input">
                         <input type="submit" name="search-button" id="search-button-id" value="Найти" class="search-button">
@@ -146,8 +144,8 @@
                     <div class="left">
                         <form class="filter">
                             <div class="filter-content">
-                                <ul class="filter-item ul-reset">
-                                    <li class="item-price">
+                                <div class="filter-item">
+                                    <fieldset class="item-price">
                                         <h3 class="price-range">Стоимость</h3>
                                         <div class="range-controls">
                                             <div class="scale">
@@ -164,7 +162,7 @@
                                                 <input type="text" name="max-price" value="5000">
                                             </label>
                                         </div>
-                                    </li>
+                                    </fieldset>
                                     <fieldset class="item-color interactive-filter">
                                         <h3 class="color">Цвет</h3>
                                         <input class="color-input visually-hidden-input interactive-input" id="black" type="checkbox" name="black">
@@ -178,14 +176,14 @@
                                         <input class="color-input visually-hidden-input interactive-input" id="pink" type="checkbox" name="pink">
                                         <label for="pink">Розовый</label>
                                     </fieldset>
-                                    <li class="bluetooth">
+                                    <fieldset class="bluetooth">
                                         <h3>Bluetooth</h3>
                                         <input class="bluetooth-input visually-hidden-input interactive-input" id="yes-bluetooth" type="radio" name="bluetooth" tabindex="0">
                                         <label for="yes-bluetooth">Есть</label>
                                         <input class="bluetooth-input visually-hidden-input interactive-input" id="no-bluetooth" type="radio" name="bluetooth" tabindex="0">
                                         <label for="no-bluetooth">Нет</label>
-                                    </li>
-                                </ul>
+                                    </fieldset>
+                                </div>
                                 <input class="filter-button interactive-button" type="submit" value="показать" id="show-results">
                             </div>
                         </form>
@@ -201,41 +199,41 @@
                                         <span class="price">500 руб.</span>
                                     </div>
                                     <div class="item-background">
-                                        <a class="in-cart interactive-button" href="#">В корзину</a>
-                                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                                        <span class="in-cart interactive-button" href="#">В корзину</span>
+                                        <span class="in-compare interactive-compare" href="#">Добавить к сравнению</span>
                                     </div>
                                 </li>
                                 <li class="item">
                                     <img src="img/items/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380" />
                                     <div class="item-subscribe">
                                         <a class="item-title" href="#">Профессиональная селфи-палка</a>
-                                        <span class="price">1500 руб.</span>
+                                        <span class="price">1 500 руб.</span>
                                     </div>
                                     <div class="item-background">
-                                        <a class="in-cart interactive-button" href="#">В корзину</a>
-                                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                                        <span class="in-cart interactive-button" href="#">В корзину</span>
+                                        <span class="in-compare interactive-compare" href="#">Добавить к сравнению</span>
                                     </div>
                                 </li>
                                 <li class="item">
                                     <img src="img/items/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380" />
                                     <div class="item-subscribe">
                                         <a class="item-title" href="#">Непотопляемая селфи-палка</a>
-                                        <span class="price">2500 руб.</span>
+                                        <span class="price">2 500 руб.</span>
                                     </div>
                                     <div class="item-background">
-                                        <a class="in-cart interactive-button" href="#">В корзину</a>
-                                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                                        <span class="in-cart interactive-button" href="#">В корзину</span>
+                                        <span class="in-compare interactive-compare" href="#">Добавить к сравнению</span>
                                     </div>
                                 </li>
                                 <li class="item">
                                     <img src="img/items/item-4.jpg" alt="Следуй за мной" width="360" height="380" />
                                     <div class="item-subscribe">
-                                        <a class="item-title" href="#">Селфи-палка "Следуй за мной"</a>
-                                        <span class="price">4900 руб.</span>
+                                        <a class="item-title" href="#">Селфи-палка «Следуй за мной»</a>
+                                        <span class="price">4 900 руб.</span>
                                     </div>
                                     <div class="item-background">
-                                        <a class="in-cart interactive-button" href="#">В корзину</a>
-                                        <a class="in-compare interactive-compare" href="#">Добавить к сравнению</a>
+                                        <span class="in-cart interactive-button" href="#">В корзину</span>
+                                        <span class="in-compare interactive-compare" href="#">Добавить к сравнению</span>
                                     </div>
                                 </li>
                             </ul>
@@ -305,7 +303,7 @@
             <section>
                 <h2 class="visually-hidden">Контакты и Сервисы</h2>
                 <div class="footer-row footer-row2">
-                    <span>г. Москва, ул Строителей, 15</span>
+                    <span class="padding-right">г. Москва, ул Строителей, 15</span>
                     <ul class="footer-services">
                         <li>
                             <a class="interactive" href="#delivery">Доставка</a>
@@ -317,7 +315,7 @@
                             <a class="interactive" href="#contacts">Контакты</a>
                         </li>
                     </ul>
-                    <span>тел.+7(495)495-95-95</span>
+                    <span class="padding-left">Тел.: +7 (495) 495-95-95</span>
                 </div>
             </section>
             <section>
@@ -341,10 +339,10 @@
                         </li>
                     </ul>
                     <a class="interactive" href="https://htmlacademy.ru/intensive/htmlcss">
-                            <svg fill=#ffc600 version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-                            </svg>
-                        </a>
+                        <svg fill=#ffc600 version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+                        </svg>
+                    </a>
                 </div>
             </section>
         </div>

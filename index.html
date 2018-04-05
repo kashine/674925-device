@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,7 +42,8 @@
                             <li id="fitness-braslets" class="interactive">
                                 <a href="#">Фитнес браслеты</a>
                             </li>
-                            <li id="smart-watches" class="interactive"><a href="#">Умные часы</a>
+                            <li id="smart-watches" class="interactive">
+                                <a href="#">Умные часы</a>
                             </li>
                         </ul>
                         <ul class="ul-reset">
@@ -99,13 +100,13 @@
                         <table class="promo-slider-table">
                             <tr class="options">
                                 <td>8,5 м</td>
-                                <td>5 кг</td>
-                                <td>Карбон</td>
+                                <td align="center">5 кг</td>
+                                <td class="left-cell" align="left">Карбон</td>
                             </tr>
                             <tr class="property">
                                 <td>Длина палки</td>
-                                <td>Вес палки</td>
-                                <td>Материал</td>
+                                <td align="center">Вес палки</td>
+                                <td align="left">Материал</td>
                             </tr>
                         </table>
                     </div>
@@ -137,11 +138,11 @@
                         <table class="promo-slider-table">
                             <tr class="options">
                                 <td>800 м</td>
-                                <td>50 м</td>
+                                <td class="left-cell">50 м</td>
                             </tr>
                             <tr class="property">
                                 <td>Дальность полета</td>
-                                <td>Радиус поражения</td>
+                                <td class="left-cell">Радиус поражения</td>
                             </tr>
                         </table>
                     </div>
@@ -165,7 +166,7 @@
                     </div>
                     <h3>Виртуальная реальность</h3>
                 </a>
-                <a class="tile" href="inner.html">
+                <a class="tile special-tile" href="inner.html">
                     <div class="popular-image img-position">
                         <img src="img/popular/popular-2.svg" alt="моноподы для селфи" width="86" height="117" />
                     </div>
@@ -202,9 +203,15 @@
                 <h2 class="visually-hidden">Сервисы</h2>
                 <div class="services-navigation">
                     <ul>
-                        <li>Доставка</li>
-                        <li>Гарантия</li>
-                        <li>Кредит</li>
+                        <li class="services-navigation-item about-delivery">
+                            <p>Доставка</p>
+                        </li>
+                        <li class="services-navigation-item">
+                            <p>Гарантия</p>
+                        </li>
+                        <li class="services-navigation-item">
+                            <p>Кредит</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="services-item delivery">
@@ -256,7 +263,7 @@
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
                     <ul class="shipping-companies">
-                        <li>Деловые линии</li>
+                        <li>Деловые Линии</li>
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
@@ -265,7 +272,7 @@
                 <article class="contacts">
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <a class="contacts-map" href="#">
+                    <a class="contacts-map" href="">
                         <img src="img/map.png" alt="г. Москва, ул Строителей, 15" width="560" height="222" />
                     </a>
                     <a class="about-contacts-btn interactive-button write-us-btn" href="#">Напишите нам</a>
@@ -394,7 +401,7 @@
             <input class="modal-button interactive-button" type="submit" name="send" id="send-letter" value="Отправить">
         </form>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
