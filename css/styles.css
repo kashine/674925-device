@@ -321,7 +321,7 @@ main {
 }
 
 .slide1 .lead {
-    width: 398px;
+    width: 399px;
 }
 
 .slide2 {
@@ -609,7 +609,9 @@ main {
 .services-navigation li:hover {
     background: #f0c52e;
 }
-
+.services-navigation li:first-of-type:hover{
+    background:#000000;
+}
 .services-navigation li:active {
     width: 280px;
     background: #000000;
@@ -1394,7 +1396,7 @@ main {
 
 .filter-content {
     padding-top: 70px;
-    padding-right: 70px;
+    padding-right: 60px;
 
 }
 
@@ -1497,7 +1499,9 @@ main {
 /*Фильтр цвета*/
 
 .item-color {
-    margin-top: 12px;
+    margin-top: 14px;
+    border:none;
+    padding: 0;
 }
 
 .item-color label,
@@ -1513,10 +1517,15 @@ main {
     -ms-flex-align: center;
     align-items: center;
 }
-
+/*
 .color-input,
 .bluetooth-input {
-    display: none;
+  display: none;
+}*/
+
+.visually-hidden-input{
+    opacity: 0;
+    position: absolute;
 }
 
 .item-color label:before {
@@ -1601,13 +1610,13 @@ main {
     opacity: 0.25;
 }
 
-.interactive-filter input:hover,
-.interactive-filter:focus {
+.interactive-input:hover~label:before{
     opacity: 0.6;
-
 }
-
-.interactive-filter:active {
+.interactive-input:focus~label:before{
+    outline:-webkit-focus-ring-color auto 5px;
+}
+.interactive-input:active~label:before {
     opacity: 1;
 }
 
@@ -1676,13 +1685,27 @@ main {
 
 }
 
-.sort-item a {
+.sort-item a{
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: rgb(0, 0, 0);
-    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
     margin-right: 27px;
+}
+ .by-price a{
+    color: rgb(0, 0, 0);
+}
+
+.interactive-sort:hover,
+.interactive-sort:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+ .by-price a:hover,
+.interactive-sort:focus{
+    color: rgb(0, 0, 0);
+}s
+.interactive-sort:active {
+    color: rgb(0, 0, 0);
 }
 
 .arrows {
@@ -1695,17 +1718,15 @@ main {
     opacity: 0.3;
 
 }
-
-
-.interactive-sort:hover,
-.interactive-sort:focus {
+.interactive-arrow:hover,
+.interactive-arrow:focus {
     opacity: 0.6;
-
 }
 
-.interactive-sort:active {
+.interactive-arrow:active {
     opacity: 1;
 }
+
 
 /* Продукты */
 

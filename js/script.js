@@ -36,7 +36,9 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
     if (!user.value || !email.value || !text.value) {
         evt.preventDefault();
-        popup.classList.add("modal-ersror");
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("user", user.value);
